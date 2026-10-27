@@ -94,10 +94,16 @@ When complete, the application should:
 - 📖 **Add books** to the library (ISBN, title, author, year)
 - 👤 **Register patrons** (ID, name, email, phone)
 - 📤 **Borrow books** (with availability and limit checks)
+- 📅 **Track due dates** (14-day loan period) and identify overdue books
 - 📥 **Return books**
 - 🔍 **Search books** by title or author
 - 📋 **List all books** (available/borrowed status)
-- 👥 **View all patrons** and their borrowed books
+- 👥 **View all patrons**, their borrowed books, due dates, and overdue status
+- ✅ **Validate console input** (required fields and publication year)
+
+Use menu option **7** to list patrons and their loans. Each patron may borrow up to
+three books at a time. Blank required fields and invalid publication years are rejected
+with a prompt to try again.
 
 ---
 

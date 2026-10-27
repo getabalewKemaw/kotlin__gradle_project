@@ -4,18 +4,19 @@ fun showMenu(): String {
 
     println(
         """
-        |================ LIBRARY MENU [for show]================
+        |================ LIBRARY MENU ==========================
         | 1 | Add Book
         | 2 | Register Patron
         | 3 | Borrow Book
         | 4 | Return Book
         | 5 | Search
         | 6 | List All Books
+        | 7 | List Patrons and Due Dates
         | 0 | Exit
-        |==============================================
+        |========================================================
         | Enter option:
         """.trimMargin()
     )
 
-    return readln().trim()
+    return readlnOrNull()?.trim() ?: "0"
 }
